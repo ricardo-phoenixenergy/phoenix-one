@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/phoenix-one-app', // Replace with your actual repository name
-  assetPrefix: '/phoenix-one-app/', // Replace with your actual repository name
+  basePath: '/phoenix-one', // Replace with your actual repository name
+  assetPrefix: '/phoenix-one/', // Replace with your actual repository name
 }
 
 export default nextConfig;
