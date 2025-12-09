@@ -6,7 +6,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-},
+  },
+  basePath: '/phoenix-one-app', // Replace with your actual repository name
+  assetPrefix: '/phoenix-one-app/', // Replace with your actual repository name
 }
 
 export default nextConfig;
