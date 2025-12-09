@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    loader: 'custom',
-    loaderFile: './imageLoader.js'
   },
   basePath: '/phoenix-one', // Replace with your actual repository name
   assetPrefix: '/phoenix-one/', // Replace with your actual repository name
