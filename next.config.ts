@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
@@ -7,8 +9,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/phoenix-one', // Replace with your actual repository name
-  assetPrefix: '/phoenix-one/', // Replace with your actual repository name
+  ...(isProd && {
+    basePath: '/phoenix-one',
+    assetPrefix: '/phoenix-one/',
+  })
 }
 
 export default nextConfig;
